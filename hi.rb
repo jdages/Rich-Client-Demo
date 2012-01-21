@@ -17,3 +17,6 @@ get '/test/:testVariable' do
   '<h1>' + @lol + '</h1>'
 end
 
+get '/scripts/:scriptName' do
+
+end
