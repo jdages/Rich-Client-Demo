@@ -3,6 +3,8 @@ require 'sinatra'
 require 'erb'
 require 'json'
 
+DB = 'http://localhost:5984/rf'
+
 get '/:something' do
   @lol = params['something']
   erb :index,
