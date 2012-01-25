@@ -1,1 +1,4 @@
-$().ready(function(){alert('sdf')});
+$().ready(function(){
+
+
+});

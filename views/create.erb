@@ -1,15 +1,22 @@
 <html>
 <head>
-  <script type="text/javascript" src="underscore-min.js" ></script>
-  <script type="text/javascript" src="backbone.js" ></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js" ></script>
-  <script type="text/javascript" src="main.js" ></script>
+  <script type="text/javascript" src="/underscore-min.js" ></script>
+  <script type="text/javascript" src="/backbone.js" ></script>
+  <script type="text/javascript" src="/jquery-1.7.1.min.js" ></script>
+  <script type="text/javascript" src="/main.js" ></script>
 
 </head>
 <body>
                   <form method="post" action="/CreateNewUser/">
-                    <input type="text" name="firstName"/>
-                    <input type="hidden" value="John" name="lol">
+                    <input type="text" name="first_name" id="first"/>
+                    <label for="first">First Name</label>
+                    <input type="text" name="last_name" id="last"/>
+                    <label for="last">Last Name</label>
+                    <input type="text" name="company_name" id="company"/>
+                    <label for="company">Company</label>
+                    <input type="text" name="job_title" id="title"/>
+                    <label for="title">Company</label>
+
                     <input type="submit" />
 
                   </form>

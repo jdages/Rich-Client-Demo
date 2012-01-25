@@ -8,11 +8,6 @@ require 'couchrest_model'
 SERVER = CouchRest.new
 DB     = SERVER.database!('users')
 
-
-get '/data/' do
-  "Lol"
-end
-
 get '/test/:testVariable' do
   @lol = params[:testVariable]
   '<h1>' + User.all.size.to_s + '</h1>'
@@ -24,7 +19,10 @@ get '/CreateNewUser/' do
 end
 
 post '/CreateNewUser/' do
-  "<h1>User " + params[:firstName] + " saved"
+  user = User.new(:first_name=>params['first_name'],:last_name=>params['last_name'],:company_name=>params['company_name'], :job_title=>params['job_title'])
+  user.save
+
+  "<h1>User " + params[:first_name] + ' ' + params[:last_name] + " saved. There are now #{User.all.size.to_s}</h1>"
 end
 
 class User < CouchRest::Model::Base
