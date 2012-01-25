@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6acad67d-e4de-4858-a510-e2026241956b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery-1.7.1.min.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/user" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hi.rb" afterPath="$PROJECT_DIR$/hi.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.js" afterPath="$PROJECT_DIR$/public/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/create.erb" afterPath="$PROJECT_DIR$/views/create.erb" />
     </list>
     <ignored path="form.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +30,7 @@
       <file leaf-file-name="hi.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hi.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="8" selection-start="512" selection-end="512" vertical-scroll-proportion="0.5882353">
+            <state line="35" column="21" selection-start="848" selection-end="848" vertical-scroll-proportion="0.77037036">
               <folding />
             </state>
           </provider>
@@ -451,7 +448,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hi.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="512" selection-end="512" vertical-scroll-proportion="0.5882353">
+        <state line="35" column="21" selection-start="848" selection-end="848" vertical-scroll-proportion="0.77037036">
           <folding />
         </state>
       </provider>

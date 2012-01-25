@@ -25,6 +25,23 @@ post '/CreateNewUser/' do
   "<h1>User " + params[:first_name] + ' ' + params[:last_name] + " saved. There are now #{User.all.size.to_s}</h1>"
 end
 
+get '/Search/:firstName' do
+   users = Array.new
+  User.all.each do |user|
+    if(user.first_name.include?(params[:firstName]))
+      users.push(user)
+      users.push(user)
+     end
+  end
+   users = users.uniq
+  output = '<ul>'
+   users.each do |user|
+     output += "<li>#{user.first_name.to_s}</li>"
+   end
+
+  output
+end
+
 class User < CouchRest::Model::Base
   use_database DB
 
