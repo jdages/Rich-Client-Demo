@@ -1,0 +1,18 @@
+require 'rubygems'
+require 'couchrest'
+
+SERVER = CouchRest.new
+DB     = SERVER.database!('users')
+
+class User < CouchRest::ExtendedDocument
+  use_database DB
+
+  property :first_name
+  property :last_name, :alias => :family_name
+  property :company_name
+  property :job_title
+  timestamps!
+
+  view_by :first_name
+
+end
