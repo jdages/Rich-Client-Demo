@@ -8,10 +8,6 @@ require 'couchrest_model'
 SERVER = CouchRest.new
 DB     = SERVER.database!('users')
 
-get '/:something' do
-  @lol = params['something']
-  erb :index
-end
 
 get '/data/' do
   "Lol"
@@ -22,17 +18,13 @@ get '/test/:testVariable' do
   '<h1>' + User.all.size.to_s + '</h1>'
 end
 
-get '/scripts/:scriptName' do
-
-end
 
 get '/CreateNewUser/' do
   erb :create
 end
 
-post '/CreateNewUser/:userInfo' do
-
-
+post '/CreateNewUser/' do
+  "<h1>User " + params[:firstName] + " saved"
 end
 
 class User < CouchRest::Model::Base
